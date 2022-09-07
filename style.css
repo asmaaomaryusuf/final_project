@@ -1,0 +1,29 @@
+*{
+    font-family: "Montserrat", Sans-serif;}
+
+.bgcolornavyblue{
+    background-color: #131e43;
+}
+.colornavyblue{
+    color: #131e43 !important;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
