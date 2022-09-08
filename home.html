@@ -21,8 +21,9 @@
                 <img src="./images/logos/Logo.png">
             </a>
             <div class="d-flex ">
-                <button class="navbar-toggler d-flex d-lg-none order-3 p-2 colornavyblue" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2 colornavyblue" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                    aria-label="Toggle navigation">
                     <i class="bi bi-three-dots-vertical colornavyblue"></i>
                 </button>
             </div>
@@ -31,21 +32,79 @@
                 <li class="nav-item"><a href="./home.html" class="nav-link colornavyblue">Home</a></li>
                 <li class="nav-item"><a href="./catalog.html" class="nav-link colornavyblue">Catalog</a></li>
                 <li class="nav-item"><a href="./about-us.html" class="nav-link colornavyblue">About Us</a></li>
-                <li class="nav-item"><a href="./products.html" class="nav-link colornavyblue">Products</a> </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link colornavyblue dropbtn" href="./products.html"
+                        aria-expanded="false">
+                        Products
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="./MB.html">Master bedrooms</a></li>
+                        <li><a href="./TKB.html">Teen & Kids bedrooms</a></li>
+                        <li><a href="./LR.html">Living Rooms</a></li>
+                        <li><a href="./DR.html">Dinning Rooms</a></li>
+                        <li><a href="./K.html">Kitchens</a></li>
+                        <li><a href="./SR.html">Shoe racks</a></li>
+                        <li><a href="./TVU.html">TV Units</a></li>
+                        <li><a href="MST.html">Middle & Side Tables</a></li>
+                        <li><a href="Mi.html">Mirrors</a></li>
+                        <li><a href="Ma.html">Mattress</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="./stores.html" class="nav-link colornavyblue">Stores</a></li>
-                <li class="nav-item"><a href="./projects.html" class="nav-link colornavyblue">Projects</a></li>
+                <li class="nav-item"><a href="https://sai-solutions.com/" class="nav-link colornavyblue">Projects</a>
+                </li>
                 <li class="nav-item"><a href="./contact.html" class="nav-link colornavyblue">Contact</a></li>
                 <li class="nav-item nav-link colornavyblue">العربية</li>
-                
+
                 <div class="offcanvas-header px-4 pb-0">
                     <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
-                  </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close" data-bs-target="#bdNavbar"></button>
+                </div>
 
             </ul>
             <div><i class="bi bi-search"></i></div>
         </header>
     </div>
+
+    
+
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner" >
+            <div class="carousel-item active align-item-center" style="height: inherit;">
+                <img src="./images/home/slider/cover.png" class="img-fluid">
+            </div>
+            <div class="carousel-item align-item-center" style="height: inherit;">
+                <img src="./images/home/slider/1800_1200-1.png" class="img-fluid">
+            </div>
+            <div class="carousel-item" style="height: inherit;">
+                <img src="./images/home/slider/Cover-Mansoura-FB-1.png" class="img-fluid">
+            </div>
+            <div class="carousel-item" style="height: inherit;">
+                <img src="./images/home/slider/Cover-Suiz-FB-1.png" class="img-fluid">
+            </div>
+            <div class="carousel-item" style="height: inherit;">
+                <img src="./images/home/slider/Cover-Zagazig-FB1-1.png" class="img-fluid">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+            style="background-image: url(./images/home/slider/back.png) ; background-repeat: no-repeat; opacity: 1;background-position: 50%; left: 0;">
+            <span class="bgcolornavyblue align-item-center rounded-circle "><span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+            style="background-image: url(./images/home/slider/back.png);background-repeat: no-repeat; opacity: 1;background-position: 50%;">
+            <span class="bgcolornavyblue rounded-circle"><span class="carousel-control-next-icon"
+                    aria-hidden="true"></span></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
 
 
