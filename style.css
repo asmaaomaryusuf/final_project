@@ -76,3 +76,27 @@ footer{
   font-family: inherit;
 
 }
+
+.bo-policy{
+  font-family: "Montserrat", Sans-serif;
+ margin: 0px 100px;
+  
+}
+.h2{
+  font-family: 'Montserrat';
+  font-size: 20px  !important;
+  font-weight: 900 !important;
+}
+.p-policy{
+  font-family: 'Montserrat';
+  font-size: 18px  !important;
+  font-weight: 400 !important;
+}
+
+.but-cat{
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat';
+}
