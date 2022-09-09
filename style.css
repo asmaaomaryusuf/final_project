@@ -92,3 +92,11 @@ footer{
   font-size: 18px  !important;
   font-weight: 400 !important;
 }
+
+.but-cat{
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat';
+}
