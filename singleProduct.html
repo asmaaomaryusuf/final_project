@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Furniture – Your smart choice</title>
+    <link rel="icon" type="image/png" href="./images/logos/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="singleProduct.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="bootstrap-social.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" /> -->
+</head>
+<script>
+    function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+    }
+</script>
+
+<body>
+    <div class="ms-5 container" style="padding:40px 20px ;">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+            <a href="./home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="./images/logos/Logo.png">
+            </a>
+            <div class="d-flex ">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2 colornavyblue" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+                    <i class="bi bi-three-dots-vertical colornavyblue"></i>
+                </button>
+            </div>
+            <ul class=" offcanvas-lg offcanvas-end flex-grow-1 nav nav-pills align-items-center" id="bdNavbar" tabindex="-1" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true" style="margin-left:35px">
+                <li class="nav-item"><a href="./home.html" class="nav-link colornavyblue">Home</a></li>
+                <li class="nav-item"><a href="./catalog.html" class="nav-link colornavyblue">Catalog</a></li>
+                <li class="nav-item"><a href="./about-us.html" class="nav-link colornavyblue">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link colornavyblue dropbtn" href="./products.html" aria-expanded="false">
+                        Products
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="./MB.html">Master bedrooms</a></li>
+                        <li><a href="./TKB.html">Teen & Kids bedrooms</a></li>
+                        <li><a href="./LR.html">Living Rooms</a></li>
+                        <li><a href="./DR.html">Dinning Rooms</a></li>
+                        <li><a href="./K.html">Kitchens</a></li>
+                        <li><a href="./SR.html">Shoe racks</a></li>
+                        <li><a href="./TVU.html">TV Units</a></li>
+                        <li><a href="MST.html">Middle & Side Tables</a></li>
+                        <li><a href="Mi.html">Mirrors</a></li>
+                        <li><a href="Ma.html">Mattress</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="./stores.html" class="nav-link colornavyblue">Stores</a></li>
+                <li class="nav-item"><a href="https://sai-solutions.com/" class="nav-link colornavyblue">Projects</a>
+                </li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link colornavyblue">Contact</a></li>
+                <li class="nav-item nav-link colornavyblue">العربية</li>
+
+                <div class="offcanvas-header px-4 pb-0">
+                    <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+                </div>
+
+            </ul>
+            <div><i class="bi bi-search"></i></div>
+        </header>
+    </div>
+
+    <!-- ================================================================ -->
+
+    <div class="container">
+        <img class="big-img justify-content-sm-end float-left img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/03/Florence-Landscape-1.jpg" alt="">
+    </div>
+
+    <div class="ms-5 mt-5">
+        <div class="d-flex">
+            <div>
+                <a href="#"><button class="bgcolornavyblue but-cat fs-5 fw-semibold ms-5">Components</button></a>
+            </div>
+            <div>
+                <a href="#"><button class="bgcolornavyblue but-cat fs-5 fw-semibold ms-5">Description</button></a>
+            </div>
+        </div>
+        <div class="container mt-5 font-regular">
+            <p class="fs-5">Room Components : Bed 160 + 2 Nightstands + Dresser + Mirror + Wardrobe 240 (Sliding)</p>
+            <p class="fs-5">Wardrobe 40 Can Be Added To Have Wardrobe 280</p>
+        </div>
+    </div>
+    <!-- -------------------------------------------------- -->
+    <div class="d-flex ms-5 mt-5 ps-5">
+
+        <div class="d-grid grid-product-side">
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center" style="width: 20rem;">
+                <img class="img-fluid" src="https://smartfurniture.com.eg/wp-content/uploads/2020/04/Florence-Bed-scaled-600x600.jpg" alt="">
+                <div class="card-body mt-4">
+
+                    <p class="fs-3 font-regular" style="letter-spacing: 1px;">Bed 160</p>
+                    <p class="bold">
+                        <p style="letter-spacing: 1px;"> <span class="text-decoration-line-through text-black-50 bold"> 14,609.00 EGP</span> &nbsp; <span class="bold" style="text-decoration: underline;">10,226.00 EGP</span>
+                        </p>
+                        <div class="bold" style="font-size: initial;line-height: 1px; letter-spacing: 1px; ">184 × 110 × 204 cm </div>
+                    </p>
+                    <!-- <div class="cntr-body">
+                        <p class="text-center">0</p>
+                    </div> -->
+                    <form style="">
+                        <div style="" class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_up</span></div>
+                        <input class="text-center" type="number" id="number" value="0" />
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span style="font-size: 15px;line-height: 0;" class="material-symbols-outlined">arrow_drop_down</span></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ======= still not done yet ======= -->
+        <div class="long-side p-5 ms-4 text-center" style="background-color:#e7d3bb ; color:#000000c7">
+            <div class="bold m-5 fs-3">
+                Buy The Full Room Item
+            </div>
+            <div class="bold m-5 fs-3">
+                <img width="128" height="128" src="https://smartfurniture.com.eg/wp-content/uploads/2020/05/shopping-cart.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://smartfurniture.com.eg/wp-content/uploads/2020/05/shopping-cart.png 128w, https://smartfurniture.com.eg/wp-content/uploads/2020/05/shopping-cart-100x100.png 100w, https://smartfurniture.com.eg/wp-content/uploads/2020/05/shopping-cart-32x32.png 32w"
+                    sizes="(max-width: 128px) 100vw, 128px">
+            </div>
+            <div>
+                <p class="fs-3">From:</p>
+                <span class="mt-2 fs-4 text-black-50 regular-font" style="display: block; text-decoration:line-through ;">70,549.00 EGP</span>
+                <span class="mt-1 fs-4 bold" style="display: block;text-decoration-line:underline;"> 49,385.00 EGP</span>
+
+            </div>
+
+        </div>
+        <!-- ======= ------------------ ======= -->
+
+    </div>
+
+    <div class="mt-5 pt-5 tailed-part text-center">
+        <div class="text-center">
+            <p class="regular-font text-black-50 fs-5" style="text-decoration:line-through ;">360,685.00 EGP</p>
+        </div>
+        <div class=" text-center">
+            <p class="regular-font fs-4" style="text-decoration-line: underline ;line-height: 3px;">252,483.00 EGP</p>
+        </div>
+        <div>
+            <a href="#"><button class="mb-5 bgcolornavyblue but-cat fs-5 fw-semibold p-3 mt-2" style="width: 20%;border-radius: 0%;" >Components</button></a>
+        </div>
+
+        <!-- <div>
+            <a href="#"><button class="mb-5 but-cat fs-5 fw-semibold p-3 mt-2" style="width:15%;border-radius: 0%;" >Linkedin</button></a>
+        </div>
+        <div>
+            <a href="#"><button class="mb-5 but-cat fs-5 fw-semibold p-3 " style="width:15%;border-radius: 0%;" >Twitter</button></a>
+        </div> -->
+        <!-- ----------------SOCIAL ICONS------------------ -->
+        <div class="d-flex mt-5 mb-5" style="justify-content:space-evenly;">
+
+            <a class="icon-social-me d-flex btn" style="border-radius: 0%;background-color: #355089;color: white;">
+                <i class='fa fa-facebook' style="color: white ; margin-right: 2rem;"></i>
+                <div class="ms-3">
+                    Facebook
+                </div>
+            </a>
+
+            <a class="icon-social-me d-flex btn" style="border-radius: 0%;background-color:#1DA1F2;color: white;">
+                <i class="fa fa-twitter-square" style="color:#ffffff ;margin-right: 2rem;"></i>
+                <div class="ms-3" style="color:white ;">
+                    Twitter
+                </div>
+                <!-- #a6f5ff -->
+            </a>
+
+
+            <a class="icon-social-me d-flex btn" style="border-radius: 0%;background-color:#0e76a8;color: white;">
+                <i class="fa fa-linkedin-square" style="color: #ffffff; margin-right: 2rem;"></i>
+                <div class="ms-3" style="color: white;">
+                    Linkedin
+                </div>
+            </a>
+
+
+        </div>
+        <!-- ------------------------------------------------ -->
+    </div>
+    <div class="" style="background-color: #fff4f4;">
+        <div class="row container mt-5 p-5" style="
+            text-align: center;
+            /* margin: 0 auto; */
+            /* display: grid; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+        ">
+            <h1 class="mt-5 bold">
+                SET PRODUCTS
+            </h1>
+            <div class="row container mt-5 p-5" style="">
+
+                <div class="col-md-3 mb-5">
+                    <a href="#" style="text-decoration: none;" class="colornavyblue">
+                        <img class="img-fluid" style="margin-bottom:2rem;" src="https://smartfurniture.com.eg/wp-content/uploads/2021/08/IMG_0012-copy-600x600.jpg" alt="">
+
+                        <p class="text-center" style=" font-size: 18px;font-weight: 700;line-height: 10px; ">
+                            Florence
+                        </p>
+
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-3 mb-5">
+                    <a href="#" style="text-decoration: none;" class="colornavyblue">
+                        <img class="img-fluid" style="margin-bottom:2rem;" src="https://smartfurniture.com.eg/wp-content/uploads/2021/04/Vida-Champagne-Landscape-1-1-600x600.jpg" alt="">
+
+                        <p class="text-center" style=" font-size: 18px;font-weight: 700;line-height: 10px; ">
+                            Vida Champagne
+                        </p>
+
+                    </a>
+                </div>
+
+
+
+
+                <div class="col-md-3 mb-5">
+                    <a href="#" style="text-decoration: none;" class="colornavyblue">
+                        <img class="img-fluid" style="margin-bottom:2rem;" src="https://smartfurniture.com.eg/wp-content/uploads/2020/06/Turin-Landscape-600x600.jpg" alt="">
+
+                        <p class="text-center" style=" font-size: 18px;font-weight: 700;line-height: 10px; ">
+                            Turin Landscape
+                        </p>
+
+                    </a>
+                </div>
+
+
+
+
+                <div class="col-md-3 mb-5">
+                    <a href="#" style="text-decoration: none;" class="colornavyblue">
+                        <img class="img-fluid" style="margin-bottom:2rem;" src="https://smartfurniture.com.eg/wp-content/uploads/2020/03/Mia-Landscape-600x600.jpg" alt="">
+
+                        <p class="text-center" style=" font-size: 18px;font-weight: 700;line-height: 10px; ">
+                            Mia Landscape
+                        </p>
+
+                    </a>
+                </div>
+
+
+
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------------------------------------- -->
+
+
+    <!-- ================================================================ -->
+
+    <!-- footer -->
+    <div class="w-100 bgcolornavyblue ">
+        <div class="container bgcolornavyblue w-100 " style="padding:40px 0px ; ">
+            <footer class="container-fluid w-100 ">
+                <div class="row ">
+                    <div class="col-sm-12 ">
+
+                    </div>
+                    <div class="col-sm-12 col-lg-3 ">
+                        <div class="elementor-image ">
+                            <a href="./home.html ">
+                                <img src="./images/logos/Logo-white.png " class="attachment-full size-full " alt=" " loading="lazy " style="margin-bottom:15px ; "> </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-auto col-lg-4 ">
+                        <div class="elementor-widget-container ">
+                            <p class="elementor-heading-title elementor-size-default " style="font-size:20px; ">CONTACT US
+                            </p>
+                        </div>
+                        <div class="elementor-widget-container ">
+                            <div class="elementor-text-editor elementor-clearfix " style="font-size:17px; ">
+                                Industrial Area B3 P.O.Box 450 2nd 10th of Ramadan City Egypt </div>
+                        </div>
+                        <div class="elementor-widget-container ">
+                            <p class="elementor-heading-title elementor-size-default "><a href="mailto:office@smartfurnitureonline.com " style="color:inherit; text-decoration: none; font-size:20px; ">office@smartfurnitureonline.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-auto col-lg-3 ">
+
+                        <div class="elementor-widget-container ">
+                            <p class="elementor-heading-title elementor-size-default " style="font-size:20px;font-weight:bolder ">ABOUT</p>
+                        </div>
+                        <div class="elementor-widget-container ">
+                            <p class="elementor-heading-title elementor-size-default "><a href="./policy.html " style="color:inherit; text-decoration: none; font-size:20px; ">Return Policy</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col col-lg-2 " style="display: grid; ">
+                        <div>
+                            <div class="elementor-icon-box-wrapper ">
+                                <div class="elementor-icon-box-icon ">
+                                    <a class="elementor-icon elementor-animation- " href="tel:19641 " style="color:inherit; text-decoration: none; ">
+                                        <i class="bi bi-telephone " style="font-size:25px;font-weight:bolder "></i> </a>
+
+                                    <a href="tel:19641 " style="color:inherit; text-decoration: none; font-size:30px;font-weight:bolder ">
+                                19641 </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="margin-top: 25px; ">
+                            <a href="https://www.facebook.com/smartfurnitureonline " target="_blank " style="color:inherit "><i
+                            class="bi bi-facebook " style="font-size:25px;font-weight:bolder; margin: 10px; "></i></a>
+                            <a href="https://www.instagram.com/smartfurnitureonline/ " target="_blank " style="color:inherit "><i
+                            class="bi bi-instagram " style="font-size:25px;font-weight:bolder;margin: 10px; "></i></a>
+                            <a href="https://www.youtube.com/channel/UCOs2bJoQE-p44JYr29CxirA " target="_blank " style="color:inherit "><i
+                            class="bi bi-youtube " style="font-size:25px;font-weight:bolder;margin: 10px; "></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 ">
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

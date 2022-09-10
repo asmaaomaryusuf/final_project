@@ -1,0 +1,131 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import "bootstrap-social.less";
+    * {
+        font-family: "Montserrat";
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+    
+    .big-img {
+        position: relative;
+        right: -22%;
+        width: 80%;
+    }
+    
+    .tailed-part {}
+    
+    .font-regular {
+        font-weight: 500;
+    }
+    
+    .long-side {}
+    
+    .grid-product-side {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5rem 3rem;
+    }
+    
+    .bold {
+        font-weight: 700;
+    }
+    
+    .cntr-body {
+        background-color: #9e9e9e33;
+        padding: 2rem;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-radius: 12%;
+    }
+    /* ------------------------------------ */
+    
+    form {
+        /* width: 86px; */
+        /* margin: 0 auto; */
+        text-align: center;
+        /* padding-top: 50px; */
+        /* background-color: #ececec; */
+        background-color: #9e9e9e33;
+        /* padding: 2rem; */
+        width: 53px;
+        height: 68px;
+        display: grid;
+        /* align-self: center; */
+        align-content: space-between;
+        /* text-align: center; */
+        margin: 0 auto;
+        /* margin-top: 2rem; */
+        border-radius: 12%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .value-button {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        background: #eee;
+        color: #000000c7;
+    }
+    
+    .value-button :hover {
+        cursor: pointer;
+    }
+    
+    form #decrease {
+        /* margin-right: -4px; */
+        /* border-radius: 8px 0 0 8px; */
+    }
+    
+    form #increase {
+        margin-left: -4px;
+        border-radius: 0 8px 8px 0;
+    }
+    
+    form #input-wrap {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    input#number {
+        text-align: center;
+        background-color: #eeeeee;
+        border: none;
+        /* border-top: 1px solid #ddd; */
+        /* border-bottom: 1px solid #ddd; */
+        /* margin: 0px; */
+        width: 40px;
+        height: 13px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* ------------------------------------ */
+    
+    .icon-social-me {
+        font-size: 2rem;
+        align-items: center;
+        font-weight: 900;
+        border-radius: 0%;
+        background-color: #355089;
+        color: white;
+        box-shadow: 12px 10px 29px -13px rgb(0 0 0 / 68%);
+        -webkit-box-shadow: 12px 10px 29px -13px rgb(0 0 0 / 68%);
+        -moz-box-shadow: 12px 10px 29px -13px rgba(0, 0, 0, 0.68);
+    }
+    
+    .icon-social-me:hover {
+        opacity: 70%;
+        background-color: var(--bs-btn-hover-bg);
+        border-color: var(--bs-btn-hover-border-color);
+    }
