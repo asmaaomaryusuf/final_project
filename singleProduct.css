@@ -13,13 +13,13 @@
         width: 80%;
     }
     
-    .tailed-part {}
+  
     
     .font-regular {
         font-weight: 500;
     }
     
-    .long-side {}
+
     
     .grid-product-side {
         grid-template-columns: 1fr 1fr 1fr;
@@ -79,10 +79,7 @@
         cursor: pointer;
     }
     
-    form #decrease {
-        /* margin-right: -4px; */
-        /* border-radius: 8px 0 0 8px; */
-    }
+  
     
     form #increase {
         margin-left: -4px;

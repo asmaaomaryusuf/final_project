@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -39,16 +40,16 @@
                     </a>
 
                     <ul class="dropdown-content">
-                        <li><a href="./MB.html">Master bedrooms</a></li>
-                        <li><a href="./TKB.html">Teen & Kids bedrooms</a></li>
-                        <li><a href="./LR.html">Living Rooms</a></li>
-                        <li><a href="./DR.html">Dinning Rooms</a></li>
-                        <li><a href="./K.html">Kitchens</a></li>
-                        <li><a href="./SR.html">Shoe racks</a></li>
-                        <li><a href="./TVU.html">TV Units</a></li>
-                        <li><a href="MST.html">Middle & Side Tables</a></li>
-                        <li><a href="Mi.html">Mirrors</a></li>
-                        <li><a href="Ma.html">Mattress</a></li>
+                        <li><a href="./MB.html" style="text-decoration: none;">Master bedrooms</a></li>
+                        <li><a href="./TKB.html" style="text-decoration: none;">Teen & Kids bedrooms</a></li>
+                        <li><a href="./LR.html" style="text-decoration: none;">Living Rooms</a></li>
+                        <li><a href="./DR.html" style="text-decoration: none;">Dinning Rooms</a></li>
+                        <li><a href="./K.html" style="text-decoration: none;">Kitchens</a></li>
+                        <li><a href="./SR.html" style="text-decoration: none;">Shoe racks</a></li>
+                        <li><a href="./TVU.html" style="text-decoration: none;">TV Units</a></li>
+                        <li><a href="MST.html" style="text-decoration: none;">Middle & Side Tables</a></li>
+                        <li><a href="Mi.html" style="text-decoration: none;">Mirrors</a></li>
+                        <li><a href="Ma.html" style="text-decoration: none;">Mattress</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="./stores.html" class="nav-link colornavyblue">Stores</a></li>
@@ -64,7 +65,22 @@
                 </div>
 
             </ul>
-            <div><i class="bi bi-search"></i></div>
+            <div>
+                <button class="openBtn" onclick="openSearch()" style="background-color:inherit"><i
+                        class="bi bi-search"></i></button>
+            </div>
+
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search"
+                            style="background-color:inherit;border:none;border-bottom:1px white solid;">
+                        <button type="submit" style="background-color:inherit; border-bottom:1px white solid"><i
+                                class="bi bi-search" style="color:white"></i></button>
+                    </form>
+                </div>
+            </div>
         </header>
     </div>
 
@@ -73,76 +89,84 @@
 
 
 
-<!-- footer -->
-<div class="w-100 bgcolornavyblue">
-    <div class="container bgcolornavyblue w-100" style="padding:40px 0px ;">
-    <footer class="container-fluid w-100">
-        <div class="row">
-            <div class="col-sm-12    ">
+    <!-- footer -->
+    <div class="w-100 bgcolornavyblue">
+        <div class="container bgcolornavyblue w-100" style="padding:40px 0px ;">
+            <footer class="container-fluid w-100">
+                <div class="row">
+                    <div class="col-sm-12    ">
 
-            </div>
-            <div class="col-sm-12  col-lg-3">
-                <div class="elementor-image">
-                    <a href="./home.html">
-                        <img
-                            src="./images/logos/Logo-white.png"
-                            class="attachment-full size-full" alt="" loading="lazy" style="margin-bottom:15px ;"> </a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-auto  col-lg-4">
-                <div class="elementor-widget-container">
-                    <p class="elementor-heading-title elementor-size-default" style="font-size:20px;">CONTACT US
-                    </p>
-                </div>
-                <div class="elementor-widget-container">
-                    <div class="elementor-text-editor elementor-clearfix" style="font-size:17px;" >
-                        Industrial Area B3 P.O.Box 450 2nd 10th of Ramadan City Egypt </div>
-                </div>
-                <div class="elementor-widget-container">
-                    <p class="elementor-heading-title elementor-size-default"><a
-                            href="mailto:office@smartfurnitureonline.com" style="color:inherit; text-decoration: none; font-size:20px; ">office@smartfurnitureonline.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-auto col-lg-3 ">
-
-                <div class="elementor-widget-container">
-                    <p class="elementor-heading-title elementor-size-default"  style="font-size:20px;font-weight:bolder" >ABOUT</p>
-                </div>
-                <div class="elementor-widget-container">
-                    <p class="elementor-heading-title elementor-size-default"><a
-                            href="./policy.html" style="color:inherit; text-decoration: none; font-size:20px;">Return Policy</a></p>
-                </div>
-            </div>
-            <div class="col-sm-12 col col-lg-2 " style="display: grid;">
-                <div>
-                    <div class="elementor-icon-box-wrapper">
-                        <div class="elementor-icon-box-icon">
-                            <a class="elementor-icon elementor-animation-" href="tel:19641" style="color:inherit; text-decoration: none;">
-                                <i class="bi bi-telephone"  style="font-size:25px;font-weight:bolder"></i> </a>
-
-                            <a href="tel:19641" style="color:inherit; text-decoration: none; font-size:30px;font-weight:bolder">
-                                19641 </a>
-
-
+                    </div>
+                    <div class="col-sm-12  col-lg-3">
+                        <div class="elementor-image">
+                            <a href="./home.html">
+                                <img src="./images/logos/Logo-white.png" class="attachment-full size-full" alt=""
+                                    loading="lazy" style="margin-bottom:15px ;"> </a>
                         </div>
+                    </div>
+                    <div class="col-sm-12 col-md-auto  col-lg-4">
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default" style="font-size:20px;">CONTACT US
+                            </p>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <div class="elementor-text-editor elementor-clearfix" style="font-size:17px;">
+                                Industrial Area B3 P.O.Box 450 2nd 10th of Ramadan City Egypt </div>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default"><a
+                                    href="mailto:office@smartfurnitureonline.com"
+                                    style="color:inherit; text-decoration: none; font-size:20px; ">office@smartfurnitureonline.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-auto col-lg-3 ">
+
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default"
+                                style="font-size:20px;font-weight:bolder">ABOUT</p>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default"><a href="./policy.html"
+                                    style="color:inherit; text-decoration: none; font-size:20px;">Return Policy</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col col-lg-2 " style="display: grid;">
+                        <div>
+                            <div class="elementor-icon-box-wrapper">
+                                <div class="elementor-icon-box-icon">
+                                    <a class="elementor-icon elementor-animation-" href="tel:19641"
+                                        style="color:inherit; text-decoration: none;">
+                                        <i class="bi bi-telephone" style="font-size:25px;font-weight:bolder"></i> </a>
+
+                                    <a href="tel:19641"
+                                        style="color:inherit; text-decoration: none; font-size:30px;font-weight:bolder">
+                                        19641 </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="margin-top: 25px;">
+                            <a href="https://www.facebook.com/smartfurnitureonline" target="_blank"
+                                style="color:inherit"><i class="bi bi-facebook"
+                                    style="font-size:25px;font-weight:bolder; margin: 10px;"></i></a>
+                            <a href="https://www.instagram.com/smartfurnitureonline/" target="_blank"
+                                style="color:inherit"><i class="bi bi-instagram"
+                                    style="font-size:25px;font-weight:bolder;margin: 10px;"></i></a>
+                            <a href="https://www.youtube.com/channel/UCOs2bJoQE-p44JYr29CxirA" target="_blank"
+                                style="color:inherit"><i class="bi bi-youtube"
+                                    style="font-size:25px;font-weight:bolder;margin: 10px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  ">
 
                     </div>
                 </div>
-                <div style="margin-top: 25px;">
-                    <a href="https://www.facebook.com/smartfurnitureonline" target="_blank" style="color:inherit"><i
-                            class="bi bi-facebook" style="font-size:25px;font-weight:bolder; margin: 10px;"></i></a>
-                    <a href="https://www.instagram.com/smartfurnitureonline/" target="_blank" style="color:inherit"><i
-                            class="bi bi-instagram" style="font-size:25px;font-weight:bolder;margin: 10px;"></i></a>
-                    <a href="https://www.youtube.com/channel/UCOs2bJoQE-p44JYr29CxirA" target="_blank" style="color:inherit"><i
-                            class="bi bi-youtube" style="font-size:25px;font-weight:bolder;margin: 10px;"></i></a>
-                </div>
-            </div>
-            <div class="col-sm-12  ">
-
-            </div>
+            </footer>
         </div>
-    </footer> </div> </div>
+    </div>
 
 
 

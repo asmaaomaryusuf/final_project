@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="./script.js"></script>
     <style>
         .mapouter {
             position: relative;
@@ -58,17 +59,17 @@
                         Products
                     </a>
 
-                    <ul class="dropdown-content">
-                        <li><a href="./MB.html">Master bedrooms</a></li>
-                        <li><a href="./TKB.html">Teen & Kids bedrooms</a></li>
-                        <li><a href="./LR.html">Living Rooms</a></li>
-                        <li><a href="./DR.html">Dinning Rooms</a></li>
-                        <li><a href="./K.html">Kitchens</a></li>
-                        <li><a href="./SR.html">Shoe racks</a></li>
-                        <li><a href="./TVU.html">TV Units</a></li>
-                        <li><a href="MST.html">Middle & Side Tables</a></li>
-                        <li><a href="Mi.html">Mirrors</a></li>
-                        <li><a href="Ma.html">Mattress</a></li>
+                    <ul class="dropdown-content" >
+                        <li><a href="./MB.html" style="text-decoration: none;">Master bedrooms</a></li>
+                        <li><a href="./TKB.html" style="text-decoration: none;">Teen & Kids bedrooms</a></li>
+                        <li><a href="./LR.html" style="text-decoration: none;">Living Rooms</a></li>
+                        <li><a href="./DR.html" style="text-decoration: none;">Dinning Rooms</a></li>
+                        <li><a href="./K.html" style="text-decoration: none;">Kitchens</a></li>
+                        <li><a href="./SR.html" style="text-decoration: none;">Shoe racks</a></li>
+                        <li><a href="./TVU.html" style="text-decoration: none;">TV Units</a></li>
+                        <li><a href="MST.html" style="text-decoration: none;">Middle & Side Tables</a></li>
+                        <li><a href="Mi.html" style="text-decoration: none;">Mirrors</a></li>
+                        <li><a href="Ma.html" style="text-decoration: none;">Mattress</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="./stores.html" class="nav-link colornavyblue">Stores</a></li>
@@ -84,7 +85,18 @@
                 </div>
 
             </ul>
-            <div><i class="bi bi-search"></i></div>
+            <div>
+                <button class="openBtn" onclick="openSearch()"style="background-color:inherit"><i class="bi bi-search"></i></button></div>
+
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content" >
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search" style="background-color:inherit;border:none;border-bottom:1px white solid;">
+                        <button type="submit" style="background-color:inherit; border-bottom:1px white solid"><i class="bi bi-search" style="color:white"></i></button>
+                      </form>
+                    </div>
+                  </div>
         </header>
     </div>
 
