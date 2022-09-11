@@ -121,8 +121,6 @@ a {
 }
 
 .divv3 {
-    /* justify-content: space-between; */
-    /* background-color: #E7D3BB; */
     padding: 3rem 5rem;
     text-align: center;
 }
@@ -145,9 +143,9 @@ a {
 }
 
 .col3 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-gap: 0.5fr;
+    grid-gap: 0.5fr; */
     margin-top: 3rem;
     padding: 1rem 10rem;
 }
@@ -229,11 +227,11 @@ a {
 
 .flip-box {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
+    width: 260px;
+    height: 260px;
+    /* border: 1px solid #f1f1f1; */
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
+    margin-bottom: 6rem;
 }
 
 
